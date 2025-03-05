@@ -255,7 +255,7 @@ async def main():
 
         # Elke minuut prijs update
         print("💰 5 Minuten-update versturen...")
-        await send_price_update(5)
+        await send_price_update()
 
         # Wacht 300 seconden
         print("⏳ 300 seconden wachten...")
