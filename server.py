@@ -28,6 +28,6 @@ if __name__ == "__main__":
     # Start Flask server in one thread
     flask_thread = threading.Thread(target=run_flask)
     flask_thread.start()
-
+    
     # Run Telegram bot in main thread
     run_telegram_bot()
