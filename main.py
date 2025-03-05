@@ -21,7 +21,7 @@ TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
 # Prijsdrempels voor alerts
-ALERT_LOW = 2300
+ALERT_LOW = 2500
 ALERT_HIGH = 4000
 
 # Maak een bot-applicatie
@@ -254,12 +254,12 @@ async def main():
             await send_combined_update()
 
         # Elke minuut prijs update
-        print("💰 Minuut-update versturen...")
-        await send_price_update()
+        print("💰 5 Minuten-update versturen...")
+        await send_price_update(5)
 
-        # Wacht 60 seconden
-        print("⏳ 60 seconden wachten...")
-        await asyncio.sleep(60)
+        # Wacht 300 seconden
+        print("⏳ 300 seconden wachten...")
+        await asyncio.sleep(300)
 
 
 # 🚀 **Start de bot**
