@@ -259,7 +259,7 @@ async def main():
 
         # Wacht 300 seconden
         print("⏳ 300 seconden wachten...")
-        await asyncio.sleep(300)
+        await asyncio.sleep(180)
 
 
 # 🚀 **Start de bot**
