@@ -17,8 +17,8 @@ amsterdam_tz = pytz.timezone('Europe/Amsterdam')
 # Token en chat-ID"
 load_dotenv()
 
-TOKEN = os.getenv('7983062665:AAGv9m1xDpNeeBMyklClwzLy2IZPTRWj4G8')
-CHAT_ID = os.getenv('7633200878')
+TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+CHAT_ID = os.getenv("TELEGRAM_CHAT_ID")
 
 # Prijsdrempels voor alerts
 ALERT_LOW = 2300
