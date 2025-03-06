@@ -257,9 +257,9 @@ async def main():
         print("💰 5 Minuten-update versturen...")
         await send_price_update()
 
-        # Wacht 300 seconden
+        # Wacht 500 seconden
         print("⏳ 300 seconden wachten...")
-        await asyncio.sleep(900)
+        await asyncio.sleep(500)
 
 
 # 🚀 **Start de bot**
