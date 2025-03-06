@@ -21,8 +21,13 @@ def run_flask():
     port = int(os.environ.get('PORT', 5000))
     app.run(host='0.0.0.0', port=port)
 
+# def run_telegram_bot():
+#     asyncio.run(telegram_bot_main())
+
 def run_telegram_bot():
-    asyncio.run(telegram_bot_main())
+    loop = asyncio.new_event_loop()
+    asyncio.set_event_loop(loop)
+    loop.run_until_complete(telegram_bot_main())
 
 if __name__ == "__main__":
     # Start Flask server in one thread
